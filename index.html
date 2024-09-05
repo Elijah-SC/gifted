@@ -43,15 +43,15 @@
     <section class="row justify-content-evenly">
       <div class="col-4 bg-sucess search-card">
         <h1>Gifted</h1>
-        <form class="row text-center">
+        <form onsubmit="app.GiftsController.createGift()" class="row text-center">
           <div class="col-12 form-floating mb-3">
             <input required type="text" class="form-control" id="tag" name="tag" placeholder="name@example.com"
-              minlength="3" maxlength="300">
+              minlength="3" maxlength="120">
             <label for="floatingInput">tag</label>
           </div>
           <div class="col-12 form-floating mb-3">
             <input required type="url" class="form-control" id="url" name="url" placeholder="name@example.com"
-              minlength="10" maxlength="50000">
+              minlength="10" maxlength="500">
             <label for="floatingInput">url</label>
           </div>
           <div class="col-12 form-floating mb-3"><Button type="submit" class="btn btn-outline-primary">Submit</Button>
@@ -69,17 +69,8 @@
       </div>
       <div class="col-7">
         <h1>Gifts</h1>
-        <div class="row">
-          <!-- <div class="col-4">
-            <div class="card">
-              <div class="card-body">
+        <div id="gift-list" class="row">
 
-                <img class="w-100 img-fluid"
-                  src="https://th.bing.com/th/id/OIP.qxIdEafv9T8Bi2zHY-yR4QAAAA?rs=1&pid=ImgDetMain" alt="">
-                <p>New House Plant</p>
-              </div>
-            </div>
-          </div> -->
 
         </div>
       </div>
